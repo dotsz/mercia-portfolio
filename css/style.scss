@@ -48,14 +48,16 @@ header {
 
 .top-section{
     margin: 15px auto;
-    width: 800px;
+    width: 750px;
     padding: 15px;
-    text-align: center;
-    border-width: 5px;
-    border-color: #fbdb4a;
-    border-style: solid;
-    border-radius: 10%;
+    text-align: center; 
+    border-radius: 5%;
+    background-image: url("/assets/jk-9gfGDbxuqrU-unsplash.jpg");
     
+    
+    .ntf-mercia{
+        border-radius: 5%;
+    }
     }
 
 .top-text{
