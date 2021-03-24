@@ -3,12 +3,13 @@ body {
   padding: 0;
   font-family: 'Montserrat', sans-serif;
   width: 100%;
-  min-width: 485px;
+  min-width: 500px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
 }
 
 h1 {
+  font-family: 'Sacramento', cursive, sans-serif;
   text-shadow: 2px 2px #fbdb4a;
   font-size: 50px;
   padding-top: 30px;
@@ -109,9 +110,9 @@ header a:hover {
 .mid-bottom {
   padding: 50px;
   background-image: url("/assets/neonbrand-z3kBG5xIhjo-unsplash.jpg");
+  background-repeat: no-repeat;
   background-size: cover;
   border-radius: 5%;
-  background-position-y: 25%;
 }
 
 .the-why {
@@ -120,9 +121,8 @@ header a:hover {
 }
 
 .my-services {
-  width: 75%;
+  width: 95%;
   text-align: center;
-  padding: 15px;
   margin: auto;
 }
 
@@ -130,6 +130,11 @@ header a:hover {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .my-services .services-box img {
@@ -140,14 +145,16 @@ header a:hover {
 
 .my-services .services-box .box-1 {
   background-color: #dbdbdb;
-  padding: 1em;
-  max-width: 25%;
+  width: 200px;
+  padding: 10px;
+  margin: 10px;
 }
 
 .my-services .services-box .box-2 {
   background-color: #d6d4d6;
-  padding: 1em;
-  max-width: 25%;
+  width: 200px;
+  padding: 10px;
+  margin: 10px;
 }
 
 @-webkit-keyframes yourAnimation {
