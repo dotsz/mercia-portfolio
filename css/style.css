@@ -1,19 +1,29 @@
 body {
   margin: 0;
   padding: 0;
-  font-family: 'Raleway', sans-serif;
+  font-family: 'Montserrat', sans-serif;
+  width: 100%;
+  min-width: 485px;
 }
 
-.avatar {
-  border-radius: 50%;
-  height: 150px;
-  width: 150px;
+h1 {
+  text-shadow: 2px 2px #fbdb4a;
+  font-size: 50px;
+  padding-top: 30px;
 }
 
 a {
   color: black;
   text-decoration: none;
-  padding: 0.3em;
+}
+
+li {
+  list-style: none;
+}
+
+span {
+  font-family: 'Sacramento', cursive, sans-serif;
+  font-size: 50px;
 }
 
 header {
@@ -24,39 +34,71 @@ header {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  max-width: 100%;
-  overflow-y: hidden;
   overflow-x: hidden;
-  margin: auto;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
 }
 
-header .nav-menu, header a {
-  padding-top: 75px;
+header .avatar {
+  height: 150px;
+  width: 150px;
+}
+
+header nav {
+  padding-top: 50px;
   padding-right: 25px;
-  font-weight: normal;
 }
 
-header .nav-menu, header a:hover {
-  color: #6193a0;
+header nav a {
+  padding-left: 10px;
+  padding-right: 10px;
+  font-weight: bold;
+}
+
+header a:hover {
+  opacity: .7;
+  font-weight: bold;
+  font-size: large;
+}
+
+.motto {
+  font-size: 40px;
+  font-family: 'Sacramento', cursive;
+  padding: 0;
+  margin: 0;
   font-weight: bold;
 }
 
 .top-section {
-  margin: 15px auto;
-  width: 750px;
-  padding: 15px;
+  background-image: url("/assets/j-kosinska-RE-8WswW95o-unsplash.jpg");
+  background-repeat: no-repeat;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -ms-flex-flow: wrap;
+      flex-flow: wrap;
+  width: 100%;
   text-align: center;
-  border-radius: 5%;
-  background-image: url("/assets/jk-9gfGDbxuqrU-unsplash.jpg");
 }
 
-.top-section .ntf-mercia {
-  border-radius: 5%;
+.middle-section {
+  width: 80%;
+  text-align: center;
+  margin: auto;
+  padding: 15px;
 }
 
-.top-text {
-  -webkit-animation: yourAnimation 2s forwards 0s ease-in-out;
-          animation: yourAnimation 2s forwards 0s ease-in-out;
+.mid-top {
+  padding: 15px;
+  margin: auto;
+}
+
+.mid-bottom {
+  padding: 15px;
+  margin: auto;
 }
 
 @-webkit-keyframes yourAnimation {
@@ -83,5 +125,41 @@ header .nav-menu, header a:hover {
             transform: rotate(xx) translateX(0);
     opacity: 1;
   }
+}
+
+.top-text {
+  -webkit-animation: yourAnimation 2s forwards 0s ease-in-out;
+          animation: yourAnimation 2s forwards 0s ease-in-out;
+}
+
+@-webkit-keyframes yourAnimation2 {
+  0% {
+    -webkit-transform: translateY(-20%);
+            transform: translateY(-20%);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: rotate(xx) translateY(0);
+            transform: rotate(xx) translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes yourAnimation2 {
+  0% {
+    -webkit-transform: translateY(-20%);
+            transform: translateY(-20%);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: rotate(xx) translateY(0);
+            transform: rotate(xx) translateY(0);
+    opacity: 1;
+  }
+}
+
+.ntf-mercia {
+  -webkit-animation: yourAnimation2 1s forwards 0s ease;
+          animation: yourAnimation2 1s forwards 0s ease;
 }
 /*# sourceMappingURL=style.css.map */
