@@ -9,7 +9,6 @@ body {
 }
 
 h1 {
-  font-family: 'Sacramento', cursive, sans-serif;
   text-shadow: 2px 2px #fbdb4a;
   font-size: 50px;
   padding-top: 30px;
@@ -39,9 +38,6 @@ header {
       -ms-flex-pack: justify;
           justify-content: space-between;
   overflow-x: hidden;
-  height: -webkit-fit-content;
-  height: -moz-fit-content;
-  height: fit-content;
 }
 
 header .avatar {
@@ -53,6 +49,7 @@ header .avatar {
 header nav {
   padding-top: 65px;
   padding-right: 25px;
+  min-width: 500px;
 }
 
 header nav a {
@@ -112,7 +109,7 @@ header a:hover {
   background-image: url("/assets/neonbrand-z3kBG5xIhjo-unsplash.jpg");
   background-repeat: no-repeat;
   background-size: cover;
-  border-radius: 5%;
+  border-radius: 2%;
 }
 
 .the-why {
@@ -148,6 +145,7 @@ header a:hover {
   width: 200px;
   padding: 10px;
   margin: 10px;
+  border-radius: 2%;
 }
 
 .my-services .services-box .box-2 {
@@ -155,6 +153,7 @@ header a:hover {
   width: 200px;
   padding: 10px;
   margin: 10px;
+  border-radius: 2%;
 }
 
 @-webkit-keyframes yourAnimation {

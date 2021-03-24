@@ -12,7 +12,7 @@ body {
 
 h1 {
 
-    font-family: 'Sacramento', cursive, sans-serif;
+   // font-family: 'Sacramento', cursive, sans-serif;
     text-shadow:2px 2px #fbdb4a;
     font-size: 50px;
     padding-top: 30px;
@@ -39,7 +39,7 @@ header {
     background-color: #fbdb4a;
     justify-content: space-between;
     overflow-x: hidden;
-    height: fit-content;
+    
     
     .avatar {
         height: 150px;
@@ -50,6 +50,7 @@ header {
     nav {
         padding-top: 65px;
         padding-right: 25px;
+        min-width: 500px;
         a {
             padding-left: 10px;
             padding-right: 10px;
@@ -108,7 +109,7 @@ font-weight: bold;
     background-image:url('/assets/neonbrand-z3kBG5xIhjo-unsplash.jpg');
     background-repeat: no-repeat;
     background-size:cover;
-    border-radius: 5%;
+    border-radius: 2%;
     
 }
 .the-why{
@@ -138,6 +139,7 @@ font-weight: bold;
             width: 200px;         
             padding: 10px;
             margin: 10px;
+            border-radius: 2%;
             }
 
         .box-2 {
@@ -145,6 +147,7 @@ font-weight: bold;
             width: 200px;  
             padding: 10px;
             margin: 10px;
+            border-radius: 2%;
             }
     }
 }
