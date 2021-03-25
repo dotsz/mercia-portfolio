@@ -13,11 +13,15 @@ body {
 h1 {
 
     font-family: 'Sacramento', cursive, sans-serif;
-    text-shadow:2px 2px #fbdb4a;
+    text-shadow:1px 1px #fbdb4a;
     font-size: 50px;
     padding-top: 30px;
 }
-
+h2 {
+    padding-left:1em;  
+    text-shadow: 2px 2px bisque;
+    
+}
 
 a {
  color:black;
@@ -38,33 +42,38 @@ header {
     display:flex;
     background-color: #fbdb4a;
     justify-content: space-between;
-    overflow-x: hidden;
     
     
-    .avatar {
-        height: 150px;
-        width: 150px;
+    
+    .main-logo {
+        height: 100px;
+        width: 100px;
         padding-left: 25px;
     }
 
     nav {
-        padding-top: 65px;
-        padding-right: 25px;
-        min-width: 500px;
+        
+
+        padding-top: 40px;
+        padding-right: 30px;
         a {
             padding-left: 10px;
             padding-right: 10px;
             font-weight: bold;
+            color:black;
+            text-shadow: 1px 1px white;
         }
 
     }
     a:hover{
-        opacity: .7;
-        font-weight: bold;
-        font-size:large;
+        color:white;
+        text-shadow: 1px 1px black;
+        
     }
 
 }
+
+
 .motto {
 font-size: 40px;
 font-family: 'Sacramento', cursive;
@@ -78,16 +87,25 @@ font-weight: bold;
     margin: 0;
     background-image: url('/assets/j-kosinska-RE-8WswW95o-unsplash.jpg');
     background-repeat: no-repeat;
+    background-size:cover;
+    background-attachment:fixed;
+    height: 100%;
     display: flex;
-    justify-content: space-around;
     flex-flow: wrap;
     width: 100%;
+    justify-content:center;
     text-align: center;
     
-    .top-right{
-        padding: 50px;
-    }
     
+    .top-right{
+        padding-top: 5em;
+    }
+    .ntf-mercia{
+        animation: yourAnimation2 1.5s forwards 0s ease-in-out;
+    }
+    .top-text{
+        animation: yourAnimation 1.5s forwards 0s ease-in-out;
+    }
 }
  
 .middle-section {
@@ -106,9 +124,11 @@ font-weight: bold;
 }
 .mid-bottom{
     padding: 50px;
-    background-image:url('/assets/neonbrand-z3kBG5xIhjo-unsplash.jpg');
+    background-image:url('/assets/j-kosinska-RE-8WswW95o-unsplash.jpg');
     background-repeat: no-repeat;
     background-size:cover;
+    height: 100%;
+    background-attachment: fixed;
     border-radius: 2%;
     
 }
@@ -118,42 +138,97 @@ font-weight: bold;
 }
 
 .my-services{
-    width: 95%;
+    width: 75%;
     text-align:center;
-    margin:auto;
+    
+    margin: auto;
     
     
     .services-box{
-        display:flex;
-        flex-wrap:wrap;
+        display:inline-flex;
+        font-size: x-small;
         justify-content: center;
+        flex-wrap: wrap;
+        
         
         img {
             width: 50px;
             height: 50px;
-            padding: 2px;
+            padding: 10px;
+            
         }
-        
-        .box-1 {
-            background-color: #dbdbdb;
-            width: 200px;         
+        .box-1, .box-2 {
             padding: 10px;
-            margin: 10px;
-            border-radius: 2%;
-            }
+            flex: 0 0 200px;
+            margin: 10px;                
+        }
 
-        .box-2 {
-            background-color: #d6d4d6;
-            width: 200px;  
-            padding: 10px;
-            margin: 10px;
-            border-radius: 2%;
+        .box-1 {
+            
+            border-radius: 2%; 
+            background-image:url('/assets/j-kosinska-RE-8WswW95o-unsplash.jpg');
+            background-repeat: no-repeat;
+            background-size:cover;
+            
+            background-attachment: fixed;
+            
             }
+        .box-2 {
+                   
+                border-radius: 2%;   
+                background-image:url('/assets/j-kosinska-RE-8WswW95o-unsplash.jpg');
+                background-repeat: no-repeat;
+                background-size:cover;
+   
+                background-attachment: fixed;   
+            }
+        
+        
+        
+        
     }
 }
 
+.pricing-and-services{
+    text-align:center;
+    padding: 10px;
+    margin: 10px;
+    width: 100%;
+    background-image:url('/assets/j-kosinska-RE-8WswW95o-unsplash.jpg');
+    background-repeat:no-repeat;
+    background-attachment: fixed;
+    height:100%;
+    background-size:cover;
+    p{
+        font-size: larger;
+        font-weight:bold;
+    }
+}
 
+.pricing-container{
+    display:flex;
+    justify-content:center;
+    flex-wrap:wrap;
 
+    div {
+        padding-right: 25px;
+        
+        margin: 5px;
+        
+        width: 250px;
+        text-align:left;
+        p {
+            font-weight: bold;
+            margin-left: -15px;
+            text-shadow:1px 1px cadetblue;
+        }
+        li {
+            margin-left: -15px;
+            font-size: xx-small;
+            
+        }
+    }
+}
 
 
 
@@ -173,9 +248,7 @@ font-weight: bold;
         }
 }
 
-.top-text{
-    animation: yourAnimation 2s forwards 0s ease-in-out;
-}
+
 
 @keyframes yourAnimation2{
     0%{
@@ -188,9 +261,8 @@ font-weight: bold;
         }
 }
 
-.ntf-mercia{
-    animation: yourAnimation2 1s forwards 0s ease;
-}
+
+
 
 
 
