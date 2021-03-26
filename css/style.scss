@@ -114,7 +114,7 @@ font-weight: bold;
         margin-top: -30px;
         padding: 0;
     }
-    .top-text{
+    .top-text {
         
         animation: yourAnimation 1.5s forwards 0s ease-in-out;
         
@@ -307,7 +307,7 @@ font-weight: bold;
 // Keyframes
 @keyframes yourAnimation{
     0%{
-        transform: translateX(-10%);
+        transform: translateX(10%);
         opacity: 0;
         }
     100%{
@@ -320,11 +320,11 @@ font-weight: bold;
 
 @keyframes yourAnimation2{
     0%{
-        transform: translateY(-20%);
+        transform: translateX(-20%);
         opacity: 0;
         }
     100%{
-        transform: rotate(xx) translateY(0);
+        transform: rotate(xx) translateX(0);
         opacity: 1;
         }
 }

@@ -322,8 +322,8 @@ header a:hover {
 
 @-webkit-keyframes yourAnimation {
   0% {
-    -webkit-transform: translateX(-10%);
-            transform: translateX(-10%);
+    -webkit-transform: translateX(10%);
+            transform: translateX(10%);
     opacity: 0;
   }
   100% {
@@ -335,8 +335,8 @@ header a:hover {
 
 @keyframes yourAnimation {
   0% {
-    -webkit-transform: translateX(-10%);
-            transform: translateX(-10%);
+    -webkit-transform: translateX(10%);
+            transform: translateX(10%);
     opacity: 0;
   }
   100% {
@@ -348,26 +348,26 @@ header a:hover {
 
 @-webkit-keyframes yourAnimation2 {
   0% {
-    -webkit-transform: translateY(-20%);
-            transform: translateY(-20%);
+    -webkit-transform: translateX(-20%);
+            transform: translateX(-20%);
     opacity: 0;
   }
   100% {
-    -webkit-transform: rotate(xx) translateY(0);
-            transform: rotate(xx) translateY(0);
+    -webkit-transform: rotate(xx) translateX(0);
+            transform: rotate(xx) translateX(0);
     opacity: 1;
   }
 }
 
 @keyframes yourAnimation2 {
   0% {
-    -webkit-transform: translateY(-20%);
-            transform: translateY(-20%);
+    -webkit-transform: translateX(-20%);
+            transform: translateX(-20%);
     opacity: 0;
   }
   100% {
-    -webkit-transform: rotate(xx) translateY(0);
-            transform: rotate(xx) translateY(0);
+    -webkit-transform: rotate(xx) translateX(0);
+            transform: rotate(xx) translateX(0);
     opacity: 1;
   }
 }
