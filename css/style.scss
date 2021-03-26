@@ -91,7 +91,7 @@ font-weight: bold;
 }
 .top-section{
     padding: 0;
-    margin: 0;
+    margin: 0 auto;
     background-image: url('/assets/j-kosinska-RE-8WswW95o-unsplash.jpg');
     background-repeat: no-repeat;
     background-size:cover;
@@ -105,12 +105,17 @@ font-weight: bold;
     
     
     .top-right{
-        padding-top: 5em;
+        max-width: 75%
+        
     }
     .ntf-mercia{
         animation: yourAnimation2 1.5s forwards 0s ease-in-out;
+        height: 300px;
+        margin-top: -30px;
+        padding: 0;
     }
     .top-text{
+        
         animation: yourAnimation 1.5s forwards 0s ease-in-out;
         
     }
@@ -128,12 +133,15 @@ font-weight: bold;
     flex-direction:column;
   }
 .mid-top{
-    padding: 15px;
+    margin-top: -85px;
+    
     font-size: larger;
+    
     p {
-        max-width: 50%;
-        width: 400px;
+        max-width: 75%;
+        width: 500px;
         margin: auto;
+        padding: 30px;
         
     }
 }
@@ -147,7 +155,7 @@ font-weight: bold;
     background-attachment: fixed;
     
        .container {
-        max-width: 40%;
+        max-width: 75%;
         width: 600px;
         margin: 50px auto;
         height: 50%;
@@ -155,25 +163,31 @@ font-weight: bold;
         border-radius: 2%;
         background-color: rgb(230, 228, 228);  
         box-shadow: 1px 1px rgb(150, 150, 150);   
+        flex: 0 0 500px;
+        h1{
+            padding-top: 25px;
+            margin: 0;
+        }
        }
 }
 .the-why{
    display:inline-block;
-    text-align:left;
+   text-align:left;
 }
 
 .my-services{
     width: 75%;
     text-align:center;
-    
-    margin: auto;
-    
+    margin: 0 auto;
+    padding-bottom: 30px;
+    margin-top: -30px;
     
     .services-box{
         display:inline-flex;
         font-size: x-small;
         justify-content: center;
         flex-wrap: wrap;
+        
         
         
         img {
