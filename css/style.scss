@@ -21,10 +21,10 @@ h1 {
     font-family: 'Sacramento', cursive, sans-serif;
     text-shadow:1px 1px #fbdb4a;
     font-size: 50px;
-    padding-top: 30px;
+    padding-top: 1em;
 }
 h2 {
-    padding-left:1em;  
+    padding-left: 1em;  
     text-shadow: 2px 2px #fbdb4a;
     
 }
@@ -39,8 +39,8 @@ li {
 }
 span {
     font-family: 'Sacramento', cursive, sans-serif;
-    font-size: 50px;
-    font-weight:bold;
+    font-size: 2em;
+    font-weight: bold;
     
 }
 
@@ -52,49 +52,39 @@ header {
     
     
     .main-logo {
-        height: 100px;
-        width: 100px;
-        margin-left: 120px;
+        height: 10em;
+        width: 10em;
+        margin-left: 5em;
+        
     }
 
     nav {
         
-
-        padding-top: 40px;
-        padding-right: 30px;
+        padding-top: 4em;
+        padding-right: 5em;
         a {
-            padding-left: 10px;
-            padding-right: 10px;
+            padding: 0 1em;
             font-weight: bold;
             color:black;
-            text-shadow: 1px 1px white;
         }
 
     }
     a:hover{
         color:white;
-        text-shadow: 1px 1px black;
-        
-        
+        text-shadow: 1px 1px black;    
     }
 
 }
 
 
-.motto {
-font-size: 40px;
-font-family: 'Sacramento', cursive;
-padding: 0;
-margin: 0;
-font-weight: bold;
 
-}
-.top-section{
-    padding: 0;
+
+.top-section {
+    
     margin: 0 auto;
     background-image: url('/assets/j-kosinska-RE-8WswW95o-unsplash.jpg');
     background-repeat: no-repeat;
-    background-size:cover;
+    background-size: cover;
     background-attachment:fixed;
     height: 100%;
     display: flex;
@@ -103,26 +93,36 @@ font-weight: bold;
     justify-content:center;
     text-align: center;
     
-    
-    .top-right{
-        max-width: 75%
-        
-    }
-    .ntf-mercia{
+    .top-left .ntf-mercia {
         animation: yourAnimation2 1.5s forwards 0s ease-in-out;
-        height: 300px;
-        margin-top: -30px;
-        padding: 0;
-    }
-    .top-text {
-        
-        animation: yourAnimation 1.5s forwards 0s ease-in-out;
+        height: 100%;
+        padding: 3em 0;
+        margin: 0 auto;
         
     }
+
+    .top-right {
+        align-self:center; 
+        
+        padding-bottom: 3em; 
+
+        .top-text {
+            animation: yourAnimation 1.5s forwards 0s ease-in-out;
+            padding: 0;
+            
+        }
+
+        .motto {
+            font-size: 2em;
+            font-family: 'Sacramento', cursive;
+            font-weight: bold
+            }
+    }
+
 }
  
 .middle-section {
-    
+
     
     width: 100%;
     text-align: center;
@@ -148,11 +148,11 @@ font-weight: bold;
 
 .mid-bottom{
     
-    background-image:url('/assets/j-kosinska-RE-8WswW95o-unsplash.jpg');
-    background-repeat: no-repeat;
+    background: url(/assets/photo-1483095348487-53dbf97d8d5b.jpg);
+    animation: chbg 15s infinite alternate;
     background-size:cover;
     height: 100%;
-    background-attachment: fixed;
+    
     
        .container {
         max-width: 75%;
@@ -170,10 +170,7 @@ font-weight: bold;
         }
        }
 }
-.the-why{
-   display:inline-block;
-   text-align:left;
-}
+
 
 .my-services{
     width: 75%;
@@ -304,7 +301,7 @@ font-weight: bold;
 
 
 
-// Keyframes
+// Keyframes 
 @keyframes yourAnimation{
     0%{
         transform: translateX(10%);
@@ -315,8 +312,6 @@ font-weight: bold;
         opacity: 1;
         }
 }
-
-
 
 @keyframes yourAnimation2{
     0%{
@@ -329,6 +324,46 @@ font-weight: bold;
         }
 }
 
+@keyframes chbg{
+    0% { 
+        background:url(/assets/photo-1483095348487-53dbf97d8d5b.jpg);
+        background-size:cover;
+       
+        
+    }
+    20% { 
+        background:url(/assets/nathana-reboucas-LIfRyiWWBZs-unsplash.jpg);
+        background-size:cover;
+        
+        
+    }
+    40% { 
+        background:url(/assets/neonbrand-I6wCDYW6ij8-unsplash.jpg);
+        background-size:cover;
+        
+        
+    }
+    60% { 
+        background:url(/assets/neonbrand-z3kBG5xIhjo-unsplash.jpg);
+        background-size:cover;
+        
+        
+    }
+    80% { 
+        background:url(/assets/nordwood-themes-cNXqmO0Z24U-unsplash.jpg);
+        background-size:cover;
+        
+        
+    }
+
+    100% {
+        background:url(/assets/instagram_login_screen_on_iphone_6s-1000x667.jpg);
+        background-size:cover;
+        
+        
+    }
+
+}
 
 
 

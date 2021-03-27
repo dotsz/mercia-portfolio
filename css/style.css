@@ -16,7 +16,7 @@ h1 {
   font-family: 'Sacramento', cursive, sans-serif;
   text-shadow: 1px 1px #fbdb4a;
   font-size: 50px;
-  padding-top: 30px;
+  padding-top: 1em;
 }
 
 h2 {
@@ -35,7 +35,7 @@ li {
 
 span {
   font-family: 'Sacramento', cursive, sans-serif;
-  font-size: 50px;
+  font-size: 2em;
   font-weight: bold;
 }
 
@@ -50,22 +50,20 @@ header {
 }
 
 header .main-logo {
-  height: 100px;
-  width: 100px;
-  margin-left: 120px;
+  height: 10em;
+  width: 10em;
+  margin-left: 5em;
 }
 
 header nav {
-  padding-top: 40px;
-  padding-right: 30px;
+  padding-top: 4em;
+  padding-right: 5em;
 }
 
 header nav a {
-  padding-left: 10px;
-  padding-right: 10px;
+  padding: 0 1em;
   font-weight: bold;
   color: black;
-  text-shadow: 1px 1px white;
 }
 
 header a:hover {
@@ -73,16 +71,7 @@ header a:hover {
   text-shadow: 1px 1px black;
 }
 
-.motto {
-  font-size: 40px;
-  font-family: 'Sacramento', cursive;
-  padding: 0;
-  margin: 0;
-  font-weight: bold;
-}
-
 .top-section {
-  padding: 0;
   margin: 0 auto;
   background-image: url("/assets/j-kosinska-RE-8WswW95o-unsplash.jpg");
   background-repeat: no-repeat;
@@ -101,21 +90,31 @@ header a:hover {
   text-align: center;
 }
 
-.top-section .top-right {
-  max-width: 75%;
-}
-
-.top-section .ntf-mercia {
+.top-section .top-left .ntf-mercia {
   -webkit-animation: yourAnimation2 1.5s forwards 0s ease-in-out;
           animation: yourAnimation2 1.5s forwards 0s ease-in-out;
-  height: 300px;
-  margin-top: -30px;
+  height: 100%;
+  padding: 3em 0;
+  margin: 0 auto;
+}
+
+.top-section .top-right {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  padding-bottom: 3em;
+}
+
+.top-section .top-right .top-text {
+  -webkit-animation: yourAnimation 1.5s forwards 0s ease-in-out;
+          animation: yourAnimation 1.5s forwards 0s ease-in-out;
   padding: 0;
 }
 
-.top-section .top-text {
-  -webkit-animation: yourAnimation 1.5s forwards 0s ease-in-out;
-          animation: yourAnimation 1.5s forwards 0s ease-in-out;
+.top-section .top-right .motto {
+  font-size: 2em;
+  font-family: 'Sacramento', cursive;
+  font-weight: bold;
 }
 
 .middle-section {
@@ -147,11 +146,11 @@ header a:hover {
 }
 
 .mid-bottom {
-  background-image: url("/assets/j-kosinska-RE-8WswW95o-unsplash.jpg");
-  background-repeat: no-repeat;
+  background: url(/assets/photo-1483095348487-53dbf97d8d5b.jpg);
+  -webkit-animation: chbg 15s infinite alternate;
+          animation: chbg 15s infinite alternate;
   background-size: cover;
   height: 100%;
-  background-attachment: fixed;
 }
 
 .mid-bottom .container {
@@ -172,11 +171,6 @@ header a:hover {
 .mid-bottom .container h1 {
   padding-top: 25px;
   margin: 0;
-}
-
-.the-why {
-  display: inline-block;
-  text-align: left;
 }
 
 .my-services {
@@ -369,6 +363,60 @@ header a:hover {
     -webkit-transform: rotate(xx) translateX(0);
             transform: rotate(xx) translateX(0);
     opacity: 1;
+  }
+}
+
+@-webkit-keyframes chbg {
+  0% {
+    background: url(/assets/photo-1483095348487-53dbf97d8d5b.jpg);
+    background-size: cover;
+  }
+  20% {
+    background: url(/assets/nathana-reboucas-LIfRyiWWBZs-unsplash.jpg);
+    background-size: cover;
+  }
+  40% {
+    background: url(/assets/neonbrand-I6wCDYW6ij8-unsplash.jpg);
+    background-size: cover;
+  }
+  60% {
+    background: url(/assets/neonbrand-z3kBG5xIhjo-unsplash.jpg);
+    background-size: cover;
+  }
+  80% {
+    background: url(/assets/nordwood-themes-cNXqmO0Z24U-unsplash.jpg);
+    background-size: cover;
+  }
+  100% {
+    background: url(/assets/instagram_login_screen_on_iphone_6s-1000x667.jpg);
+    background-size: cover;
+  }
+}
+
+@keyframes chbg {
+  0% {
+    background: url(/assets/photo-1483095348487-53dbf97d8d5b.jpg);
+    background-size: cover;
+  }
+  20% {
+    background: url(/assets/nathana-reboucas-LIfRyiWWBZs-unsplash.jpg);
+    background-size: cover;
+  }
+  40% {
+    background: url(/assets/neonbrand-I6wCDYW6ij8-unsplash.jpg);
+    background-size: cover;
+  }
+  60% {
+    background: url(/assets/neonbrand-z3kBG5xIhjo-unsplash.jpg);
+    background-size: cover;
+  }
+  80% {
+    background: url(/assets/nordwood-themes-cNXqmO0Z24U-unsplash.jpg);
+    background-size: cover;
+  }
+  100% {
+    background: url(/assets/instagram_login_screen_on_iphone_6s-1000x667.jpg);
+    background-size: cover;
   }
 }
 /*# sourceMappingURL=style.css.map */
